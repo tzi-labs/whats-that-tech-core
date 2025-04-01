@@ -1,5 +1,6 @@
 {
   "name": "shopify",
+  "categories": ["cms", "ecommerce"],
   "detectors": {
     "metaTagCheck": {
       "name": "shopify-checkout-api-token",

@@ -1,5 +1,6 @@
 {
   "name": "google-analytics",
+  "categories": ["pixel", "analytics"],
   "detectors": {
     "globalVariables": ["gtag", "ga", "GoogleAnalyticsObject", "__gaTracker"],
     "requestUrlRegex": [
