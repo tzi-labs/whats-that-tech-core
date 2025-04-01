@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Custom Website Builder">
+  <title>Non-Webflow Website Test</title>
+  <link rel="stylesheet" href="/assets/css/modern-portfolio.custom.css">
+  <script src="/assets/js/custom.js" type="text/javascript"></script>
+</head>
+<body class="body">
+  <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar">
+    <div class="container">
+      <a href="#" class="brand">
+        <h1>Non-Webflow Website Test</h1>
+      </a>
+      <nav role="navigation" class="nav-menu">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="container">
+      <p>This is a test page that does not contain Webflow markers.</p>
+    </div>
+  </div>
+
+  <script>
+    // Custom website builder globals, not Webflow
+    window.CustomBuilder = [];
+    window.CustomBuilder.push(function() {
+      console.log('Custom builder is initialized');
+    });
+    
+    window.__custom_settings = {
+      site: {
+        id: "abc123def456",
+        name: "Test Custom Site",
+        domain: "test-site.example.com"
+      },
+      theme: {
+        name: "modern-portfolio"
+      }
+    };
+  </script>
+</body>
+</html> 

@@ -1,0 +1,12 @@
+{
+  "name": "react",
+  "detectors": {
+    "globalVariables": ["React", "__REACT_DEVTOOLS_GLOBAL_HOOK__"],
+    "selectorExists": [
+      "div[data-reactroot]",
+      "[data-reactid]",
+      "noscript[data-reactroot]",
+      "#react-root"
+    ]
+  }
+} 

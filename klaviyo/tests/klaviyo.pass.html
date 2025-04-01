@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Klaviyo Test</title>
+  <!-- Klaviyo snippet -->
+  <script type="text/javascript">
+    var _learnq = _learnq || [];
+    _learnq.push(['account', 'ACCOUNT_ID']);
+    (function () {
+      var b = document.createElement('script');
+      b.type = 'text/javascript';
+      b.async = true;
+      b.src = 'https://a.klaviyo.com/media/js/analytics/analytics.js';
+      var a = document.getElementsByTagName('script')[0];
+      a.parentNode.insertBefore(b, a);
+    })();
+  </script>
+</head>
+<body>
+  <h1>Klaviyo Test Page</h1>
+  <p>This page contains Klaviyo tracking implementation.</p>
+  
+  <form id="newsletter-form">
+    <input type="email" placeholder="Your Email">
+    <button type="submit">Subscribe</button>
+  </form>
+  
+  <script>
+    // Initialize Klaviyo for API usage
+    window.Klaviyo = window.Klaviyo || {
+      account: 'ACCOUNT_ID',
+      settings: {
+        api_key: 'API_KEY'
+      }
+    };
+    
+    // Track an event using Klaviyo
+    document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (window._learnq) {
+        _learnq.push(['identify', {
+          '$email': document.querySelector('input[type="email"]').value
+        }]);
+        _learnq.push(['track', 'Newsletter Subscription', {
+          'Source': 'Test Page'
+        }]);
+      }
+    });
+  </script>
+  
+  <!-- Additional Klaviyo script for tracking -->
+  <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=ACCOUNT_ID"></script>
+</body>
+</html> 

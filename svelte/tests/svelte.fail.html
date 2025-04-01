@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Non-Svelte App Test</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div>
+      <h1>Regular HTML Application</h1>
+      <p>This is a test page that does not contain Svelte markers.</p>
+    </div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </nav>
+  </div>
+
+  <script>
+    // No Svelte-specific global variables
+    document.getElementById('app').innerHTML += '<p>Regular JavaScript DOM manipulation</p>';
+  </script>
+</body>
+</html> 

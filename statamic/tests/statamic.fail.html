@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Custom CMS">
+  <title>Non-Statamic Website Test</title>
+  <link rel="stylesheet" href="/themes/custom-theme/css/site.css">
+  <script src="/scripts/cms.js"></script>
+</head>
+<body>
+  <!-- Custom CMS -->
+  <div id="app">
+    <header class="site-header">
+      <h1>Non-Statamic Website Test</h1>
+    </header>
+    
+    <main class="site-content">
+      <div class="container">
+        <p>This is a test page that does not contain Statamic markers.</p>
+        <p><a href="/admin/dashboard">Admin Dashboard</a></p>
+        <p><a href="/admin/content">View Content</a></p>
+      </div>
+    </main>
+    
+    <footer class="site-footer">
+      <p>Powered by Custom CMS</p>
+    </footer>
+  </div>
+
+  <script>
+    // Custom CMS globals, not Statamic
+    window.CustomCMS = {
+      version: '2.4.1',
+      siteId: 'site-id',
+      adminUrl: '/admin',
+      apiUrl: '/api',
+      siteRoot: '/',
+      theme: 'custom-theme'
+    };
+  </script>
+</body>
+</html> 

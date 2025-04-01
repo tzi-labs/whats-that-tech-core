@@ -1,0 +1,12 @@
+{
+  "name": "google-analytics",
+  "detectors": {
+    "globalVariables": ["gtag", "ga", "GoogleAnalyticsObject", "__gaTracker"],
+    "requestUrlRegex": [
+      "google-analytics\\.com/analytics\\.js",
+      "googletagmanager\\.com/gtag/js",
+      "google-analytics\\.com/collect",
+      "analytics\\.google\\.com"
+    ]
+  }
+} 

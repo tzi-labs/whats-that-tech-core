@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Next.js App Test</title>
+  <link rel="stylesheet" href="/_next/static/css/main.css">
+  <script src="/_next/static/chunks/framework.js"></script>
+  <script src="/_next/static/chunks/main.js"></script>
+  <script src="/_next/static/abcdef123456/pages/index.js"></script>
+</head>
+<body>
+  <div id="__next">
+    <div>
+      <h1>Next.js Application</h1>
+      <p>This is a test page that contains Next.js markers.</p>
+    </div>
+  </div>
+
+  <script>
+    // Mock Next.js runtime
+    window.__NEXT_DATA__ = {
+      props: { pageProps: {} },
+      page: "/",
+      query: {},
+      buildId: "abcdef123456"
+    };
+    
+    // Add the "next" global variable that's checked in the fingerprint
+    window.next = {
+      version: "13.0.0",
+      router: { pathname: "/" }
+    };
+  </script>
+</body>
+</html> 

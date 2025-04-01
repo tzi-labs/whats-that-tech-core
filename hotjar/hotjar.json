@@ -1,0 +1,12 @@
+{
+  "name": "hotjar",
+  "detectors": {
+    "globalVariables": ["hj", "hjSiteSettings", "_hjSettings"],
+    "requestUrlRegex": [
+      "static\\.hotjar\\.com/c/hotjar-",
+      "vars\\.hotjar\\.com",
+      "script\\.hotjar\\.com",
+      "in\\.hotjar\\.com/api/v2/client/sites"
+    ]
+  }
+} 

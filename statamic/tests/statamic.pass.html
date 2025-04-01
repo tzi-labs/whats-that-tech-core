@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Statamic">
+  <title>Statamic Website Test</title>
+  <link rel="stylesheet" href="/themes/cool-theme/css/site.css">
+  <script src="/vendor/statamic/cms/resources/js/statamic.js"></script>
+</head>
+<body>
+  <!-- Statamic -->
+  <div id="statamic-app">
+    <header class="site-header">
+      <h1>Statamic Website Test</h1>
+    </header>
+    
+    <main class="site-content">
+      <div class="container">
+        <p>This is a test page that contains Statamic markers.</p>
+        <p><a href="/cp/dashboard">Admin Dashboard</a></p>
+        <p><a href="/content/pages">View Content</a></p>
+      </div>
+    </main>
+    
+    <footer class="site-footer">
+      <p>Powered by Statamic</p>
+    </footer>
+  </div>
+
+  <script>
+    // Mock Statamic globals
+    window.Statamic = {
+      version: '3.3.2',
+      siteId: 'site-id',
+      cpUrl: '/cp',
+      apiUrl: '/!/api',
+      siteRoot: '/',
+      theme: 'cool-theme'
+    };
+  </script>
+</body>
+</html> 

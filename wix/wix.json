@@ -1,0 +1,13 @@
+{
+  "name": "wix",
+  "detectors": {
+    "globalVariables": ["wixBiSession", "wixSdk"],
+    "metaTagCheck": {
+      "name": "generator",
+      "contentRegex": "Wix\\.com"
+    },
+    "selectorExists": [
+      "div[class*='wixui-']"
+    ]
+  }
+} 

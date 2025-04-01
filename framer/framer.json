@@ -1,0 +1,17 @@
+{
+  "name": "framer",
+  "detectors": {
+    "metaTagCheck": {
+      "name": "generator",
+      "contentRegex": "Framer"
+    },
+    "selectorExists": [
+      "[data-framer-name]",
+      "[data-framer-component-type]",
+      "div[data-framer-page-wrapper]"
+    ],
+    "requestUrlRegex": [
+      "events\\.framer\\.com/script"
+    ]
+  }
+} 

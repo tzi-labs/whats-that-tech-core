@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Svelte/SvelteKit App Test</title>
+  <link rel="stylesheet" href="/build/bundle.css">
+  <script defer src="/build/bundle.js"></script>
+</head>
+<body>
+  <div id="svelte" data-sveltekit>
+    <div>
+      <h1>Svelte Application</h1>
+      <p>This is a test page that contains Svelte markers.</p>
+    </div>
+    <nav data-sveltekit-prefetch>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </nav>
+  </div>
+
+  <script>
+    // Mock SvelteKit runtime
+    window.__sveltekit = {
+      base: "",
+      env: {},
+      version: "1.0.0-next.405"
+    };
+  </script>
+</body>
+</html> 

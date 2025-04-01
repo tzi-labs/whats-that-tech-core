@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Non-Google Tag Manager Test</title>
+  <script>
+    // Custom data layer, not Google Tag Manager
+    var eventQueue = [];
+    function pushEvent(eventData) {
+      eventQueue.push(eventData);
+      console.log('Event pushed:', eventData);
+    }
+  </script>
+</head>
+<body>
+  <h1>Non-Google Tag Manager Test Page</h1>
+  <p>This page does not contain Google Tag Manager implementation.</p>
+  
+  <button id="test-button">Track Event</button>
+  
+  <script>
+    // Add event listener for button click
+    document.getElementById('test-button').addEventListener('click', function() {
+      pushEvent({
+        type: 'button_click',
+        buttonId: 'test-button',
+        timestamp: new Date().toISOString()
+      });
+    });
+    
+    // Initialize tracking
+    pushEvent({
+      type: 'page_view',
+      page: window.location.pathname,
+      timestamp: new Date().toISOString()
+    });
+  </script>
+</body>
+</html> 

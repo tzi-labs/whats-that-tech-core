@@ -1,0 +1,10 @@
+{
+  "name": "shopify",
+  "detectors": {
+    "metaTagCheck": {
+      "name": "shopify-checkout-api-token",
+      "contentRegex": ".*"
+    },
+    "globalVariables": ["Shopify", "ShopifyAnalytics"]
+  }
+} 

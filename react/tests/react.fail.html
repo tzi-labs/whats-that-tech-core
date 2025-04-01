@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Non-React App Test</title>
+</head>
+<body>
+  <div id="root">
+    <div>
+      <h1>Regular HTML Application</h1>
+      <p>This is a test page that does not contain React markers.</p>
+    </div>
+  </div>
+
+  <script>
+    // No React-specific global variables
+    document.getElementById('root').innerHTML = '<h1>Regular JavaScript DOM Manipulation</h1>';
+  </script>
+</body>
+</html> 

@@ -1,0 +1,11 @@
+{
+  "name": "svelte",
+  "detectors": {
+    "globalVariables": ["__sveltekit", "__SVELTEKIT_DEV__"],
+    "selectorExists": [
+      "[data-sveltekit]",
+      "[data-sveltekit-preload-data]",
+      "[data-sveltekit-reload]"
+    ]
+  }
+} 

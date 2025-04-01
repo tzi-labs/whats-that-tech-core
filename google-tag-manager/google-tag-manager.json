@@ -1,0 +1,10 @@
+{
+  "name": "google-tag-manager",
+  "detectors": {
+    "globalVariables": ["dataLayer", "google_tag_manager"],
+    "requestUrlRegex": [
+      "googletagmanager\\.com/gtm\\.js",
+      "googletagmanager\\.com/ns\\.html"
+    ]
+  }
+} 

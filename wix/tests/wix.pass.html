@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Wix.com Website Builder">
+  <title>Wix Website Test</title>
+  <link rel="stylesheet" href="https://static.parastorage.com/services/wix-thunderbolt/dist/style.css">
+  <script src="https://static.wixstatic.com/sites/js/wix.min.js"></script>
+</head>
+<body>
+  <div id="SITE_CONTAINER">
+    <div id="main_MF" class="main-wrapper">
+      <div id="site-root">
+        <div id="masterPage">
+          <header id="SITE_HEADER"></header>
+          <main id="SITE_MAIN">
+            <h1>Wix Website Test</h1>
+            <p>This is a test page that contains Wix.com markers.</p>
+          </main>
+          <footer id="SITE_FOOTER"></footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Mock Wix globals
+    window.wixBiSession = {
+      viewerSessionId: "test-session-id",
+      initialTimestamp: new Date().getTime(),
+      visitorId: "test-visitor-id"
+    };
+    
+    window.wixSdk = {
+      getMetaSiteId: function() { return "test-metasite-id"; },
+      getSiteId: function() { return "test-site-id"; }
+    };
+  </script>
+</body>
+</html> 

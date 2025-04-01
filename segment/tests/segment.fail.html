@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Non-Segment Test</title>
+  <script>
+    // Custom analytics tracking, not Segment
+    var tracker = {
+      identify: function(userId, traits) {
+        console.log('User identified:', userId, traits);
+      },
+      track: function(eventName, properties) {
+        console.log('Event tracked:', eventName, properties);
+      },
+      page: function(pageName) {
+        console.log('Page viewed:', pageName);
+      }
+    };
+    
+    // Track page view
+    tracker.page(window.location.pathname);
+  </script>
+</head>
+<body>
+  <h1>Non-Segment Test Page</h1>
+  <p>This page does not contain Segment tracking implementation.</p>
+  
+  <button id="test-button">Track Event</button>
+  
+  <script>
+    // Add event listener for button click
+    document.getElementById('test-button').addEventListener('click', function() {
+      tracker.track('Button Clicked', {
+        buttonId: 'test-button',
+        timestamp: new Date().toISOString()
+      });
+    });
+  </script>
+</body>
+</html> 

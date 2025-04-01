@@ -1,0 +1,7 @@
+{
+  "name": "facebook-pixel",
+  "detectors": {
+    "requestUrlRegex": "connect\\.facebook\\.net/.*/fbevents\\.js",
+    "globalVariables": ["fbq"]
+  }
+}

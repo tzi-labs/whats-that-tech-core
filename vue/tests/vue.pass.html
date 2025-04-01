@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vue.js App Test</title>
+</head>
+<body>
+  <div id="app">
+    <div data-v-123456>
+      <h1>Vue.js Application</h1>
+      <p>This is a test page that contains Vue.js markers.</p>
+    </div>
+    <button data-v-789abc>Vue Component Button</button>
+  </div>
+
+  <script>
+    // Mock Vue global
+    window.Vue = {
+      version: "3.2.47",
+      config: {},
+      use: function() {}
+    };
+    
+    // Mock Vue devtools hook
+    window.__VUE_DEVTOOLS_GLOBAL_HOOK__ = {
+      // Mock properties
+      enabled: true,
+      emit: function() {},
+      on: function() {}
+    };
+  </script>
+</body>
+</html> 

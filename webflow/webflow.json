@@ -1,0 +1,16 @@
+{
+  "name": "webflow",
+  "detectors": {
+    "globalVariables": ["Webflow"],
+    "metaTagCheck": {
+      "name": "generator",
+      "contentRegex": "Webflow"
+    },
+    "selectorExists": [
+      ".w-webflow-badge"
+    ]
+  },
+  "themeDetection": {
+    "cssLinkRegex": "css/([\\w-]+)\\.webflow\\.css"
+  }
+} 

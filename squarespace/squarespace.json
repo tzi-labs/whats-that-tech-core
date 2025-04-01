@@ -1,0 +1,14 @@
+{
+  "name": "squarespace",
+  "detectors": {
+    "globalVariables": ["Squarespace"],
+    "metaTagCheck": {
+      "name": "generator",
+      "contentRegex": "Squarespace"
+    }
+  },
+  "themeDetection": {
+    "method": "global",
+    "globalPath": "Static.SQUARESPACE_CONTEXT.templateName"
+  }
+} 

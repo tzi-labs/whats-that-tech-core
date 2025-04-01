@@ -1,0 +1,12 @@
+{
+  "name": "nuxt",
+  "detectors": {
+    "globalVariables": ["__NUXT__", "$nuxt"],
+    "selectorExists": [
+      "#__nuxt",
+      "#__layout",
+      "[data-n-head]",
+      "[data-n-]"
+    ]
+  }
+} 

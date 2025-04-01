@@ -1,0 +1,10 @@
+{
+  "name": "gtag",
+  "detectors": {
+    "globalVariables": ["gtag"],
+    "requestUrlRegex": [
+      "googletagmanager\\.com/gtag/js",
+      "google-analytics\\.com/g/collect"
+    ]
+  }
+} 

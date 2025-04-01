@@ -1,0 +1,11 @@
+{
+  "name": "vue",
+  "detectors": {
+    "globalVariables": ["Vue", "__VUE_DEVTOOLS_GLOBAL_HOOK__", "VueRouter"],
+    "selectorExists": [
+      "[data-v-]",
+      "#app[data-v-app]",
+      "[data-server-rendered='true']"
+    ]
+  }
+} 

@@ -1,0 +1,10 @@
+{
+  "name": "segment",
+  "detectors": {
+    "globalVariables": ["analytics", "analytics.initialize", "analytics.invoked"],
+    "selectorExists": [
+      "script[src*='cdn.segment.com/analytics.js']",
+      "script[src*='cdn.segment.com/analytics.min.js']"
+    ]
+  }
+} 

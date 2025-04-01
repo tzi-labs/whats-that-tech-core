@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>React App Test</title>
+</head>
+<body>
+  <div id="root" data-reactroot="">
+    <div data-reactid="1">
+      <h1>React Application</h1>
+      <p>This is a test page that contains React markers.</p>
+    </div>
+  </div>
+
+  <script>
+    // Mock React devtools hook
+    window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = {
+      // Mock properties
+      supportsFiber: true,
+      inject: function() {},
+      // Mock React version
+      renderers: {
+        1: { version: "18.2.0" }
+      }
+    };
+  </script>
+</body>
+</html> 

@@ -1,0 +1,20 @@
+{
+  "name": "wordpress",
+  "detectors": {
+    "metaTagCheck": {
+      "name": "generator",
+      "contentRegex": "WordPress"
+    },
+    "selectorExists": [
+      "script[src*='wp-includes']",
+      "body.wp-",
+      "#wpadminbar"
+    ],
+    "globalVariables": ["wp", "wpApiSettings", "wc"],
+    "themeDetection": {
+      "stylesheetRegex": "wp-content\\/themes\\/([-\\w]+)",
+      "bodyClassRegex": "theme-([-\\w]+)",
+      "cssIdentifierRegex": "Theme Name:\\s*([^\\n]+)"
+    }
+  }
+} 
