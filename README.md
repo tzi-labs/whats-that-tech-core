@@ -1,5 +1,6 @@
 
----
+---![255c0691-b785-467d-95cf-a0a4a35fcf5b](https://github.com/user-attachments/assets/7c804d73-d067-4f04-b439-78ecaa0eefb6)
+
 
 ## 🧠 Detection Strategy
 
@@ -24,6 +25,8 @@ Each technology has two test HTML fixtures:
 - `*.fail.html`: Negative case
 
 These fixtures help validate detectors and ensure updates don’t introduce false positives or negatives.
+
+Why are the tests made this way, you ask? Well, it's because if we were inputting a URL for a test, then it's possible a framework can change, and the tests will fail in the future or give false positives.
 
 ---
 
