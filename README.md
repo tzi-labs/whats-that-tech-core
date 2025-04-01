@@ -1,5 +1,6 @@
 
-![255c0691-b785-467d-95cf-a0a4a35fcf5b](https://github.com/user-attachments/assets/7c804d73-d067-4f04-b439-78ecaa0eefb6)
+![image](https://github.com/user-attachments/assets/88e8e7cf-2bee-41f2-b078-2f28c9cbd26c)
+
 
 The first open-sourced, crowd-sourced logic for detecting most of the web technologies powering the internet today.
 Designed for transparency, speed, and community-driven contributions — this framework identifies frameworks, CMSs, analytics, and more using simple, readable rules anyone can extend.
