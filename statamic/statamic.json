@@ -1,18 +1,9 @@
 {
   "name": "statamic",
+  "categories": ["cms"],
   "detectors": {
-    "metaTagCheck": {
-      "name": "generator",
-      "contentRegex": "Statamic"
-    },
-    "globalVariables": ["Statamic"],
-    "selectorExists": [
-      "[data-statamic]",
-      "[data-statamic-field]",
-      "[data-statamic-handler]"
+    "cookieCheck": [
+      "statamic_session"
     ]
-  },
-  "themeDetection": {
-    "cssLinkRegex": "/themes/([\\w-]+)/"
   }
 } 

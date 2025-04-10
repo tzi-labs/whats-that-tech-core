@@ -1,5 +1,6 @@
 {
   "name": "segment",
+  "categories": ["analytics"],
   "detectors": {
     "globalVariables": ["analytics", "analytics.initialize", "analytics.invoked"],
     "selectorExists": [

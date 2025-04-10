@@ -1,13 +1,16 @@
 {
   "name": "klaviyo",
+  "categories": ["analytics"],
   "detectors": {
-    "globalVariables": ["_learnq", "Klaviyo"],
+    "globalVariables": ["_learnq"],
     "requestUrlRegex": [
       "a\\.klaviyo\\.com/media/js/analytics/analytics\\.js",
       "static\\.klaviyo\\.com/onsite/js/klaviyo\\.js",
       "static\\.klaviyo\\.com/onsite/js/klaviyo\\.min\\.js",
       "a\\.klaviyo\\.com/api/identify",
-      "a\\.klaviyo\\.com/api/track"
+      "a\\.klaviyo\\.com/api/track",
+      "fast\\.a\\.klaviyo\\.com",
+      "static-forms\\.klaviyo\\.com"
     ]
   }
 } 

@@ -1,5 +1,6 @@
 {
   "name": "squarespace",
+  "categories": ["cms"],
   "detectors": {
     "globalVariables": ["Squarespace"],
     "metaTagCheck": {

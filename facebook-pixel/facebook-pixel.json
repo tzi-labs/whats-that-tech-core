@@ -1,8 +1,7 @@
 {
   "name": "facebook-pixel",
-  "categories": ["pixel", "marketing"],
+  "categories": ["analytics"],
   "detectors": {
-    "requestUrlRegex": "connect\\.facebook\\.net/.*/fbevents\\.js",
     "globalVariables": ["fbq"]
   }
 }

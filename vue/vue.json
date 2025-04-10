@@ -1,5 +1,6 @@
 {
   "name": "vue",
+  "categories": ["framework"],
   "detectors": {
     "globalVariables": ["Vue", "__VUE_DEVTOOLS_GLOBAL_HOOK__", "VueRouter"],
     "selectorExists": [

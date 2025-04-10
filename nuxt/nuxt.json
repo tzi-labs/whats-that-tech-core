@@ -1,5 +1,6 @@
 {
   "name": "nuxt",
+  "categories": ["framework"],
   "detectors": {
     "globalVariables": ["__NUXT__", "$nuxt"],
     "selectorExists": [

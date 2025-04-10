@@ -1,6 +1,6 @@
 {
   "name": "react",
-  "categories": ["framework", "frontend"],
+  "categories": ["framework"],
   "detectors": {
     "globalVariables": ["React", "__REACT_DEVTOOLS_GLOBAL_HOOK__"],
     "selectorExists": [

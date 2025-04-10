@@ -1,5 +1,6 @@
 {
   "name": "wix",
+  "categories": ["cms"],
   "detectors": {
     "globalVariables": ["wixBiSession", "wixSdk"],
     "metaTagCheck": {

@@ -1,5 +1,6 @@
 {
   "name": "next",
+  "categories": ["framework"],
   "detectors": {
     "globalVariables": ["next"],
     "htmlRegex": "(data-next-page|data-next-url|__NEXT_DATA__|__next)"

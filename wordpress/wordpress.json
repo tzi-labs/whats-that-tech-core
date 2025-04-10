@@ -1,5 +1,6 @@
 {
   "name": "wordpress",
+  "categories": ["cms"],
   "detectors": {
     "metaTagCheck": {
       "name": "generator",
